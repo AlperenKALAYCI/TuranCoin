@@ -5,9 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TURAN - Türk Dünyası Dayanışma Tokeni</title>
     <meta name="description" content="TURAN Coin, Türk dünyasının ortak geleceği için tasarlanmış, dayanışma odaklı bir BEP-20 tokenidir. Ödemelerin %1'i sosyal dayanışma fonuna aktarılır.">
+    
+    <!-- SOSYAL MEDYA ÖNİZLEME -->
     <meta property="og:title" content="TURAN - Türk Dünyası Dayanışma Tokeni">
-    <meta property="og:description" content="Türk dünyasının ortak geleceği için dayanışma tokeni.">
+    <meta property="og:description" content="Türk dünyasının ortak geleceği için dayanışma tokeni. Likidite sonsuza kadar kilitli.">
     <meta property="og:image" content="logo.png">
+    <meta property="og:url" content="https://alperenkalayci.github.io/TuranCoin/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="TURAN - Türk Dünyası Dayanışma Tokeni">
+    <meta name="twitter:image" content="logo.png">
+    
     <link rel="icon" type="image/png" href="logo.png">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -23,6 +31,7 @@
                 <li><a href="#home">Anasayfa</a></li>
                 <li><a href="#about">Hakkımızda</a></li>
                 <li><a href="#tokenomics">Tokenomics</a></li>
+                <li><a href="#chart">Grafik</a></li>
                 <li><a href="#roadmap">Yol Haritası</a></li>
                 <li><a href="#howto">Nasıl Alınır</a></li>
                 <li><a href="#contact">İletişim</a></li>
@@ -39,6 +48,7 @@
             <p class="subtitle">Her ödemenin %1'i sosyal dayanışma fonuna aktarılır.</p>
             <div class="hero-buttons">
                 <a href="#howto" class="btn btn-primary">Nasıl Alınır?</a>
+                <a href="TURAN_Whitepaper_v1.0.pdf" target="_blank" class="btn btn-secondary">📄 Whitepaper</a>
                 <a href="https://bscscan.com/token/0xeA470164385d6c1434Eb3928Fb52EE4F351f106E" target="_blank" class="btn btn-secondary">BSCScan'de Gör</a>
             </div>
             <div class="stats">
@@ -51,8 +61,8 @@
                     <span class="stat-label">Dayanışma Vergisi</span>
                 </div>
                 <div class="stat">
-                    <span class="stat-value">1 Milyar</span>
-                    <span class="stat-label">Sabit Arz</span>
+                    <span class="stat-value">🔒</span>
+                    <span class="stat-label">Likidite Sonsuza Kadar Kilitli</span>
                 </div>
             </div>
         </div>
@@ -87,11 +97,13 @@
                         <p>Türk dünyasının ortak geleceği için bir arada.</p>
                     </div>
                 </div>
+                <div style="text-align: center; margin-top: 40px;">
+                    <a href="TURAN_Whitepaper_v1.0.pdf" target="_blank" class="btn btn-primary">
+                        📄 Whitepaper İndir
+                    </a>
+                </div>
             </div>
         </div>
-        <a href="TURAN_Whitepaper_v1.0.pdf" target="_blank" class="btn btn-primary">
-    📄 Whitepaper İndir
-</a>
     </section>
 
     <!-- TOKENOMICS -->
@@ -105,6 +117,11 @@
                     <p class="tokenomics-desc">Değiştirilemez, sabit arz.</p>
                 </div>
                 <div class="tokenomics-card">
+                    <h3>Dolaşımdaki Arz</h3>
+                    <p class="tokenomics-value">Havuzda</p>
+                    <p class="tokenomics-desc">PancakeSwap likiditesine kilitli.</p>
+                </div>
+                <div class="tokenomics-card">
                     <h3>Dayanışma Vergisi</h3>
                     <p class="tokenomics-value">%1</p>
                     <p class="tokenomics-desc">Her alım-satımda otomatik kesinti.</p>
@@ -115,11 +132,17 @@
                     <p class="tokenomics-desc">Hızlı ve düşük maliyetli işlemler.</p>
                 </div>
                 <div class="tokenomics-card">
+                    <h3>Likidite Durumu</h3>
+                    <p class="tokenomics-value">🔒 Kilitli</p>
+                    <p class="tokenomics-desc">LP tokenları sonsuza kadar yakıldı.</p>
+                </div>
+                <div class="tokenomics-card">
                     <h3>Vergi Alanı</h3>
                     <p class="tokenomics-value">Dayanışma Fonu</p>
                     <p class="tokenomics-desc">Ortak projelere aktarılır.</p>
                 </div>
             </div>
+
             <div class="contract-info">
                 <h3>📍 Sözleşme Adresi</h3>
                 <div class="contract-address">
@@ -130,11 +153,35 @@
                     <a href="https://bscscan.com/token/0xeA470164385d6c1434Eb3928Fb52EE4F351f106E" target="_blank">BSCScan'de Görüntüle →</a>
                 </p>
             </div>
+
+            <!-- LİKİDİTE KİLİDİ KANITI -->
+            <div class="lock-proof">
+                <h3>🔒 Likidite Kilidi (Burn Kanıtı)</h3>
+                <p>TURAN/WBNB likidite havuzunun LP tokenları <strong>sonsuza kadar yakılmıştır (burned)</strong>. Havuzdaki likidite kalıcı olarak kilitlidir. Kimse — kurucu dahil — bu likiditeyi çekemez.</p>
+                <a href="https://bscscan.com/tx/0xddcb9ea97aa31bec1dcf1ce1779d1289a6fdd661462bf64750ea952270f79c22" target="_blank" class="btn btn-primary">
+                    🔍 BSCScan'de Kanıtı Gör
+                </a>
+            </div>
         </div>
     </section>
 
-    <!-- YOL HARİTASI -->
-    <section id="roadmap" class="section">
+    <!-- CANLI GRAFİK -->
+    <section id="chart" class="section">
+        <div class="container">
+            <h2 class="section-title">Canlı Fiyat Grafiği</h2>
+            <p style="text-align: center; color: #b3b3b3; margin-bottom: 30px;">
+                TURAN/WBNB fiyat hareketlerini canlı olarak takip edin.
+            </p>
+            <div class="chart-buttons">
+                <a href="https://dexscreener.com/bsc/0xeA470164385d6c1434Eb3928Fb52EE4F351f106E" target="_blank" class="btn btn-primary">📊 DexScreener'da Gör</a>
+                <a href="https://www.dextools.io/app/en/bnb/pair-explorer/0xeA470164385d6c1434Eb3928Fb52EE4F351f106E" target="_blank" class="btn btn-secondary">📈 DexTools'ta Gör</a>
+                <a href="https://pancakeswap.finance/swap?outputCurrency=0xeA470164385d6c1434Eb3928Fb52EE4F351f106E" target="_blank" class="btn btn-secondary">🥞 PancakeSwap</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- YOL HARİTASI (GÜNCELLENMİŞ) -->
+    <section id="roadmap" class="section section-dark">
         <div class="container">
             <h2 class="section-title">Yol Haritası</h2>
             <div class="roadmap">
@@ -148,24 +195,35 @@
                         <p>✅ BSCScan doğrulama (Verified)</p>
                     </div>
                 </div>
+                <div class="roadmap-item completed">
+                    <div class="roadmap-marker">✓</div>
+                    <div class="roadmap-content">
+                        <h3>Faz 2: Kurumsallaşma</h3>
+                        <p>✅ Web sitesi yayını</p>
+                        <p>✅ Whitepaper yayını</p>
+                        <p>✅ Sosyal medya hesapları</p>
+                        <p>✅ PancakeSwap likidite</p>
+                        <p>✅ LP tokenları sonsuza kadar yakıldı (burned)</p>
+                    </div>
+                </div>
                 <div class="roadmap-item active">
                     <div class="roadmap-marker">→</div>
                     <div class="roadmap-content">
-                        <h3>Faz 2: Büyüme (Şu Anki Aşama)</h3>
-                        <p>⏳ Web sitesi yayını</p>
-                        <p>⏳ Whitepaper yayını</p>
-                        <p>⏳ Sosyal medya hesapları</p>
-                        <p>⏳ PancakeSwap likidite</p>
+                        <h3>Faz 3: Büyüme (Şu Anki Aşama)</h3>
+                        <p>⏳ Topluluk büyütme</p>
+                        <p>⏳ CoinGecko ve CMC başvurusu</p>
+                        <p>⏳ Trust Wallet logo başvurusu</p>
+                        <p>⏳ İlk 1.000 cüzdan sahibi</p>
                     </div>
                 </div>
                 <div class="roadmap-item upcoming">
-                    <div class="roadmap-marker">3</div>
+                    <div class="roadmap-marker">4</div>
                     <div class="roadmap-content">
-                        <h3>Faz 3: Genişleme</h3>
-                        <p>• CoinGecko ve CMC başvurusu</p>
-                        <p>• Trust Wallet logo başvurusu</p>
-                        <p>• Topluluk büyütme</p>
-                        <p>• Ortaklıklar</p>
+                        <h3>Faz 4: Genişleme</h3>
+                        <p>• DEX listeleri</p>
+                        <p>• Ödeme entegrasyonu</p>
+                        <p>• Dayanışma fonundan ilk proje desteği</p>
+                        <p>• Mobil cüzdan uygulaması</p>
                     </div>
                 </div>
             </div>
@@ -173,7 +231,7 @@
     </section>
 
     <!-- NASIL ALINIR -->
-    <section id="howto" class="section section-dark">
+    <section id="howto" class="section">
         <div class="container">
             <h2 class="section-title">Nasıl Alınır?</h2>
             <div class="steps">
@@ -198,17 +256,16 @@
                     <p>Sözleşme adresini yapıştırıp TURAN alın.</p>
                 </div>
             </div>
-          <div style="text-align: center; margin-top: 30px;">
-    <a href="https://pancakeswap.finance/swap?outputCurrency=0xeA470164385d6c1434Eb3928Fb52EE4F351f106E" 
-       target="_blank" class="btn btn-primary">
-        🥞 PancakeSwap'ta TURAN Al
-    </a>
-</div>
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="https://pancakeswap.finance/swap?outputCurrency=0xeA470164385d6c1434Eb3928Fb52EE4F351f106E" target="_blank" class="btn btn-primary">
+                    🥞 PancakeSwap'ta TURAN Al
+                </a>
+            </div>
         </div>
     </section>
 
     <!-- İLETİŞİM -->
-    <section id="contact" class="section">
+    <section id="contact" class="section section-dark">
         <div class="container">
             <h2 class="section-title">Topluluğa Katıl</h2>
             <div class="social-links">
@@ -223,6 +280,9 @@
     <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
+            <p style="font-family: monospace; font-size: 0.85rem; word-break: break-all;">
+                Contract: 0xeA470164385d6c1434Eb3928Fb52EE4F351f106E
+            </p>
             <p>&copy; 2026 TURAN Coin. Tüm hakları saklıdır.</p>
             <p class="disclaimer">Bu site yatırım tavsiyesi içermez. Kripto paralar yüksek risk içerir. Kendi araştırmanızı yapın (DYOR).</p>
         </div>
@@ -232,7 +292,14 @@
         function copyAddress() {
             const addr = document.getElementById('contractAddr').innerText;
             navigator.clipboard.writeText(addr);
-            alert('Sözleşme adresi kopyalandı!');
+            const btn = event.target;
+            const originalText = btn.innerHTML;
+            btn.innerHTML = '✓ Kopyalandı!';
+            btn.style.background = '#22c55e';
+            setTimeout(() => {
+                btn.innerHTML = originalText;
+                btn.style.background = '';
+            }, 2000);
         }
     </script>
 </body>
